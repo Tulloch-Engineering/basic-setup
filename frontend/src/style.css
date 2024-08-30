@@ -1,0 +1,141 @@
+/* Define the custom Helvetica font */
+@font-face {
+  font-family: 'Helvetica';
+  src: url('@/assets/fonts/Helvetica-Font/Helvetica.ttf');
+}
+
+@font-face {
+  font-family: 'Helvetica-bold';
+  src: url('@/assets/fonts/Helvetica-Font/Helvetica-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'MaterialSymbolsOutlined';
+  src: url('@/assets/fonts/variablefont/MaterialSymbolsOutlined[FILL,GRAD,opsz,wght].ttf')
+    format('truetype');
+}
+
+@font-face {
+  font-family: 'MaterialSymbolsRounded';
+  src: url('@/assets/fonts/variablefont/MaterialSymbolsRounded[FILL,GRAD,opsz,wght].ttf')
+    format('truetype');
+}
+
+@font-face {
+  font-family: 'MaterialSymbolsSharp';
+  src: url('@/assets/fonts/variablefont/MaterialSymbolsSharp[FILL,GRAD,opsz,wght].ttf')
+    format('truetype');
+}
+
+.MaterialSymbolsSharp {
+  font-family: 'MaterialSymbolsSharp';
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  font-size: 3rem;
+  line-height: 0;
+  vertical-align: middle;
+}
+
+.MaterialSymbolsRounded {
+  font-family: 'MaterialSymbolsRounded';
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  font-size: 3rem;
+  line-height: 0;
+  vertical-align: middle;
+}
+
+.item-cal-div {
+  border: 1px solid black;
+  width: fit-content;
+  margin: 1rem;
+}
+
+.col-icon {
+  width: fit-content;
+}
+.col-label {
+  text-align: left;
+  padding-right: 0.5rem;
+}
+.col-value {
+  width: fit-content;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: --webkit-fill-available;
+}
+
+b {
+  font-family: 'Helvetica-bold';
+}
+
+#app {
+  margin: 0;
+  padding: 0;
+  min-width: 375px;
+}
+
+html {
+  height: --webkit-fill-available;
+}
+
+:root {
+  font-family: Helvetica;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --light-blue: #a4a3c5;
+  --dark-blue: #323982;
+  --grey: rgba(175, 175, 175, 0.5);
+  --dark-grey: rgb(80, 80, 80);
+  --bright-green: #75b643;
+  --red-error: rgb(238, 111, 111);
+
+  --merx-red: #ffe4e4;
+  --biddingo-blue: #dbe5ff;
+  --bids-and-tenders-green: #f1ffe9;
+}
+
+body {
+  margin: 0;
+  min-width: 375px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-family: 'Helvetica-bold';
+}
+
+button {
+  border: 0.2rem solid black;
+  border-radius: 0.4rem;
+  font-family: 'Helvetica-bold';
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  min-height: 4rem;
+}
+
+button:hover {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+button:active {
+  background-image: linear-gradient(#bdbdbd, #ffffff);
+}
+
+@media (min-width: 400px) {
+}

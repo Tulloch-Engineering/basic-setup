@@ -1,0 +1,40 @@
+name: Linting
+
+on: push
+
+jobs:
+  backend:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11.9'
+
+      - name: Create venv, Install, Lint
+        run: |
+          python -m venv venv
+          source venv/bin/activate
+          pip install -r backend/requirements.txt
+          pip install isort && pip install black
+          isort --check backend && black --check -l 120 backend
+
+  frontend:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.1.0'
+
+      - name: Install node_modules, Lint
+        run: |
+          cd frontend
+          npm install
+          npm run lint && npm run prettier

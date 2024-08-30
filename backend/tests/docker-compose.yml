@@ -1,0 +1,15 @@
+# docker compose file
+version: "3.9"
+
+services:
+  TestDatabase:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: TestDatabase
+    restart: unless-stopped
+    ports:
+      - "1433:1433"
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=abcABC123
+      - MSSQL_PID=Developer
+      - MSSQL_AGENT_ENABLED=True
