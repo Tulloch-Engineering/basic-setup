@@ -1,26 +1,18 @@
 <template>
-  <div>
-    Hi
-  </div>
+  <div>Hi</div>
 </template>
 
 <script>
-
 export default {
   name: 'HomePage',
-  components: {
-  },
+  components: {},
   data() {
-    return {
-    }
+    return {}
   },
   setup() {},
-  mounted() {
-  },
-  methods: {
-  },
+  mounted() {},
+  methods: {},
 }
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

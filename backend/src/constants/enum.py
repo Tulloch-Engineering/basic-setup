@@ -1,5 +1,6 @@
 from enum import Enum
 
+
 class ErrorResponse(Enum):
     ATTRIBUTE = "Attribute Error."
     CREDENTIALS = "Credential Error."
